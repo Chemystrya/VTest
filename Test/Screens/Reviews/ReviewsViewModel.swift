@@ -9,18 +9,15 @@ final class ReviewsViewModel: NSObject {
     private var state: State
     private let reviewsProvider: ReviewsProvider
     private let ratingRenderer: RatingRenderer
-    private let decoder: JSONDecoder
 
     init(
         state: State = State(),
         reviewsProvider: ReviewsProvider = ReviewsProvider(),
-        ratingRenderer: RatingRenderer = RatingRenderer(),
-        decoder: JSONDecoder = JSONDecoder()
+        ratingRenderer: RatingRenderer = RatingRenderer()
     ) {
         self.state = state
         self.reviewsProvider = reviewsProvider
         self.ratingRenderer = ratingRenderer
-        self.decoder = decoder
     }
 
 }
@@ -35,7 +32,9 @@ extension ReviewsViewModel {
     func getReviews() {
         guard state.shouldLoad else { return }
         state.shouldLoad = false
-        reviewsProvider.getReviews(offset: state.offset, completion: gotReviews)
+        reviewsProvider.getReviews(offset: state.offset) { [weak self] result in
+            self?.gotReviews(result)
+        }
     }
 
 }
@@ -48,10 +47,15 @@ private extension ReviewsViewModel {
     func gotReviews(_ result: ReviewsProvider.GetReviewsResult) {
         do {
             let data = try result.get()
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
             let reviews = try decoder.decode(Reviews.self, from: data)
             state.items += reviews.items.map(makeReviewItem)
             state.offset += state.limit
             state.shouldLoad = state.offset < reviews.count
+            if !state.shouldLoad {
+                state.items.append(makeReviewsCountItem(reviews.count))
+            }
         } catch {
             state.shouldLoad = true
         }
@@ -70,6 +74,27 @@ private extension ReviewsViewModel {
         onStateChange?(state)
     }
 
+    /// метод для правильного окончания, так как нет .stringsdict файла
+    func makeReviewsCountString(for count: Int) -> String {
+        let absCount = abs(count)
+        let lastTwo = absCount % 100
+        let lastOne = absCount % 10
+
+        let suffix: String
+
+        if 11...14 ~= lastTwo {
+            suffix = "отзывов"
+        } else {
+            switch lastOne {
+            case 1: suffix = "отзыв"
+            case 2...4: suffix = "отзыва"
+            default: suffix = "отзывов"
+            }
+        }
+
+        return "\(count) \(suffix)"
+    }
+
 }
 
 // MARK: - Items
@@ -77,15 +102,28 @@ private extension ReviewsViewModel {
 private extension ReviewsViewModel {
 
     typealias ReviewItem = ReviewCellConfig
+    typealias ReviewsCountItem = ReviewsCountCellConfig
 
     func makeReviewItem(_ review: Review) -> ReviewItem {
+        let userNameText = "\(review.firstName) \(review.lastName)".attributed(font: .username)
         let reviewText = review.text.attributed(font: .text)
         let created = review.created.attributed(font: .created, color: .created)
         let item = ReviewItem(
+            avatarImage: UIImage(named: "l5w5aIHioYc"),
+            usernameText: userNameText,
+            ratingImage: ratingRenderer.ratingImage(review.rating),
             reviewText: reviewText,
             created: created,
-            onTapShowMore: showMoreReview
+            onTapShowMore: { [weak self] id in
+                self?.showMoreReview(with: id)
+            }
         )
+        return item
+    }
+
+    func makeReviewsCountItem(_ count: Int) -> ReviewsCountItem {
+        let countText = makeReviewsCountString(for: count).attributed(font: .reviewCount, color: .reviewCount)
+        let item = ReviewsCountItem(text: countText)
         return item
     }
 
