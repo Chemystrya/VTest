@@ -11,5 +11,7 @@ struct Review: Decodable {
     let created: String
     /// Рейтинг
     let rating: Int
+    /// String url аватара
+    let avatarUrl: String?
 
 }

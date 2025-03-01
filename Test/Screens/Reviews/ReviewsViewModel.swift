@@ -126,7 +126,7 @@ private extension ReviewsViewModel {
         let reviewText = review.text.attributed(font: .text)
         let created = review.created.attributed(font: .created, color: .created)
         let item = ReviewItem(
-            avatarImage: UIImage(named: "l5w5aIHioYc"),
+            stringUrl: review.avatarUrl,
             usernameText: userNameText,
             ratingImage: ratingRenderer.ratingImage(review.rating),
             reviewText: reviewText,
