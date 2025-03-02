@@ -3,7 +3,12 @@ import UIKit
 final class ReviewsViewController: UIViewController {
 
     private lazy var reviewsView = makeReviewsView()
-    private lazy var activityIndicator = makeActivityIndicator()
+
+    private lazy var activityIndicator: ReviewsActivityIndicator = {
+        let spinner = ReviewsActivityIndicator(squareLength: 70)
+        return spinner
+    }()
+
     private lazy var refreshControl: UIRefreshControl = {
         let control = UIRefreshControl()
         control.addTarget(self, action: #selector(refreshReviews), for: .valueChanged)
@@ -28,9 +33,10 @@ final class ReviewsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(activityIndicator)
+
         setupViewModel()
         setupRefreshControl()
-        setupActivityIndicator()
         viewModel.getReviews()
     }
 
@@ -57,9 +63,9 @@ private extension ReviewsViewController {
             }
 
             if state.isInitialLoading {
-                activityIndicator.startAnimating()
+                activityIndicator.startAnimation(delay: 0.04, replicates: 20)
             } else {
-                activityIndicator.stopAnimating()
+                activityIndicator.stopAnimation()
             }
 
             if state.isRefreshing {
@@ -83,15 +89,6 @@ private extension ReviewsViewController {
         indicator.hidesWhenStopped = true
         indicator.color = .gray
         return indicator
-    }
-
-    private func setupActivityIndicator() {
-        view.addSubview(activityIndicator)
-        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-        ])
     }
 
 }

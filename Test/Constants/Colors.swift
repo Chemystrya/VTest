@@ -10,3 +10,10 @@ extension UIColor {
     static let reviewCount: UIColor = .secondaryLabel
 
 }
+
+extension CGColor {
+
+    /// Цвет активити индикатора.
+    static let activityIndicator = CGColor(red: 0/255, green: 119/255, blue: 255/255, alpha: 1)
+
+}

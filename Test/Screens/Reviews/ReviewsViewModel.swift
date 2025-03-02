@@ -91,7 +91,7 @@ private extension ReviewsViewModel {
         onStateChange?(state)
     }
 
-    /// метод для правильного окончания, так как нет .stringsdict файла
+    /// Метод для правильного окончания слова, так как нет .stringsdict файла.
     func makeReviewsCountString(for count: Int) -> String {
         let absCount = abs(count)
         let lastTwo = absCount % 100
@@ -129,6 +129,7 @@ private extension ReviewsViewModel {
             stringUrl: review.avatarUrl,
             usernameText: userNameText,
             ratingImage: ratingRenderer.ratingImage(review.rating),
+            photoImages: review.photoUrls ?? [],
             reviewText: reviewText,
             created: created,
             onTapShowMore: { [weak self] id in

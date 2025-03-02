@@ -29,6 +29,7 @@
 		21ED1F652D69D0340012D6F6 /* ReviewsScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ED1F642D69D0340012D6F6 /* ReviewsScreenFactory.swift */; };
 		50B061002D733B7300D933E3 /* ReviewsCountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B060FF2D733B6E00D933E3 /* ReviewsCountCell.swift */; };
 		50B061022D7357B100D933E3 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B061012D7357A500D933E3 /* UIImageView+Ext.swift */; };
+		50B061082D7451FC00D933E3 /* ReviewsActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B061072D7451FC00D933E3 /* ReviewsActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		21ED1F642D69D0340012D6F6 /* ReviewsScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsScreenFactory.swift; sourceTree = "<group>"; };
 		50B060FF2D733B6E00D933E3 /* ReviewsCountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsCountCell.swift; sourceTree = "<group>"; };
 		50B061012D7357A500D933E3 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		50B061072D7451FC00D933E3 /* ReviewsActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		21B82E372D47B1090085DAA2 /* Reviews */ = {
 			isa = PBXGroup;
 			children = (
+				50B061092D74D19500D933E3 /* Views */,
 				21ED1F642D69D0340012D6F6 /* ReviewsScreenFactory.swift */,
 				21B82E292D47B0640085DAA2 /* ReviewsViewController.swift */,
 				2166A0F32D4A5B25009AAA76 /* ReviewsView.swift */,
@@ -191,6 +194,14 @@
 				21ED1F612D69CBCD0012D6F6 /* RootView.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		50B061092D74D19500D933E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50B061072D7451FC00D933E3 /* ReviewsActivityIndicator.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +297,7 @@
 				2166686F2D48E23F009AAA76 /* Fonts.swift in Sources */,
 				21B82E312D47B0640085DAA2 /* AppDelegate.swift in Sources */,
 				21B8416F2D47C4C60085DAA2 /* String+Ext.swift in Sources */,
+				50B061082D7451FC00D933E3 /* ReviewsActivityIndicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

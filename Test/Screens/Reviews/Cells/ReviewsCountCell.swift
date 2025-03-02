@@ -99,7 +99,10 @@ private final class ReviewsCountCellLayout {
 
         return countLabelFrame.maxY + insets.bottom
     }
+    
 }
+
+// MARK: - Typealias
 
 fileprivate typealias Config = ReviewsCountCellConfig
 fileprivate typealias Layout = ReviewsCountCellLayout

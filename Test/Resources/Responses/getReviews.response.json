@@ -15,7 +15,14 @@
             "rating": 3,
             "text": "Скользские ужасно.",
             "created": "12 минут назад",
-            "avatar_url": "https://robohash.org/c2f52a9e4839a3cc543b3979799665b3?set=set4&bgset=&size=200x200"
+            "avatar_url": "https://robohash.org/c2f52a9e4839a3cc543b3979799665b3?set=set4&bgset=&size=200x200",
+            "photo_urls": [
+                "https://fastly.picsum.photos/id/772/200/200.jpg?hmac=9euSj4JHTPr7uT5QWVmeNJ8JaqAXY8XmJnYfr_DfBJc",
+                "https://fastly.picsum.photos/id/539/200/200.jpg?hmac=8uIu6eeXIH6tNIHiVORkXIi3GaBh5DO0XR2AXfO7mzA",
+                "https://fastly.picsum.photos/id/1052/200/200.jpg?hmac=C8TAQ7jOmsdTxY6LFqx0ft2jNVIX0GxUmo8kCnVHkIE",
+                "https://fastly.picsum.photos/id/915/200/200.jpg?hmac=zZ-_EQ1TWG_LFblhB2BrD2CJYUhLEnobSCCthppN0ZE",
+                "https://fastly.picsum.photos/id/84/200/200.jpg?hmac=6H-uafgNQmg74KSd7tSKVP1PWLigkAnXdB_PyFgxXNA"
+            ]
         },
         {
             "first_name": "Евгения",
@@ -31,7 +38,10 @@
             "rating": 2,
             "text": "Понравилось отношение - несмотря на то, что заказ был выполнен не идеально, продавец был очень любезен и шёл... Прошла по снегу 30 метров, 5 раз упала. Спасибо мужу, поддерживал. Возврат, к сожалению.",
             "created": "минуту назад",
-            "avatar_url": "https://robohash.org/c2f52a9e4839a3cc543b3979799665b3?set=set4&bgset=&size=200x200"
+            "avatar_url": "https://robohash.org/c2f52a9e4839a3cc543b3979799665b3?set=set4&bgset=&size=200x200",
+            "photo_urls": [
+                "https://fastly.picsum.photos/id/539/200/200.jpg?hmac=8uIu6eeXIH6tNIHiVORkXIi3GaBh5DO0XR2AXfO7mzA"
+            ]
         },
         {
             "first_name": "Никита",
@@ -55,7 +65,12 @@
             "rating": 2,
             "text": "",
             "created": "вчера в 12:39",
-            "avatar_url": "https://robohash.org/fe4c6f18430f4700a9c5a828b1ab5cfd?set=set4&bgset=&size=200x200"
+            "avatar_url": "https://robohash.org/fe4c6f18430f4700a9c5a828b1ab5cfd?set=set4&bgset=&size=200x200",
+            "photo_urls": [
+                "https://fastly.picsum.photos/id/539/200/200.jpg?hmac=8uIu6eeXIH6tNIHiVORkXIi3GaBh5DO0XR2AXfO7mzA",
+                "https://fastly.picsum.photos/id/1052/200/200.jpg?hmac=C8TAQ7jOmsdTxY6LFqx0ft2jNVIX0GxUmo8kCnVHkIE",
+                "https://fastly.picsum.photos/id/915/200/200.jpg?hmac=zZ-_EQ1TWG_LFblhB2BrD2CJYUhLEnobSCCthppN0ZE"
+            ]
         },
 
 
@@ -73,7 +88,14 @@
             "rating": 3,
             "text": "Скользские ужасно.",
             "created": "12 минут назад",
-            "avatar_url": "https://robohash.org/fe4c6f18430f4700a9c5a828b1ab5cfd?set=set4&bgset=&size=200x200"
+            "avatar_url": "https://robohash.org/fe4c6f18430f4700a9c5a828b1ab5cfd?set=set4&bgset=&size=200x200",
+            "photo_urls": [
+                "https://fastly.picsum.photos/id/772/200/200.jpg?hmac=9euSj4JHTPr7uT5QWVmeNJ8JaqAXY8XmJnYfr_DfBJc",
+                "https://fastly.picsum.photos/id/539/200/200.jpg?hmac=8uIu6eeXIH6tNIHiVORkXIi3GaBh5DO0XR2AXfO7mzA",
+                "https://fastly.picsum.photos/id/1052/200/200.jpg?hmac=C8TAQ7jOmsdTxY6LFqx0ft2jNVIX0GxUmo8kCnVHkIE",
+                "https://fastly.picsum.photos/id/915/200/200.jpg?hmac=zZ-_EQ1TWG_LFblhB2BrD2CJYUhLEnobSCCthppN0ZE",
+                "https://fastly.picsum.photos/id/84/200/200.jpg?hmac=6H-uafgNQmg74KSd7tSKVP1PWLigkAnXdB_PyFgxXNA"
+            ]
         },
         {
             "first_name": "Евгения",
@@ -89,7 +111,10 @@
             "rating": 2,
             "text": "Понравилось отношение - несмотря на то, что заказ был выполнен не идеально, продавец был очень любезен и шёл... Прошла по снегу 30 метров, 5 раз упала. Спасибо мужу, поддерживал. Возврат, к сожалению.",
             "created": "минуту назад",
-            "avatar_url": "https://robohash.org/fe4c6f18430f4700a9c5a828b1ab5cfd?set=set4&bgset=&size=200x200"
+            "avatar_url": "https://robohash.org/fe4c6f18430f4700a9c5a828b1ab5cfd?set=set4&bgset=&size=200x200",
+            "photo_urls": [
+                "https://fastly.picsum.photos/id/539/200/200.jpg?hmac=8uIu6eeXIH6tNIHiVORkXIi3GaBh5DO0XR2AXfO7mzA"
+            ]
         },
         {
             "first_name": "Никита",
@@ -113,7 +138,12 @@
             "rating": 2,
             "text": "",
             "created": "вчера в 12:39",
-            "avatar_url": "https://robohash.org/c2f52a9e4839a3cc543b3979799665b3?set=set4&bgset=&size=200x200"
+            "avatar_url": "https://robohash.org/c2f52a9e4839a3cc543b3979799665b3?set=set4&bgset=&size=200x200",
+            "photo_urls": [
+                "https://fastly.picsum.photos/id/539/200/200.jpg?hmac=8uIu6eeXIH6tNIHiVORkXIi3GaBh5DO0XR2AXfO7mzA",
+                "https://fastly.picsum.photos/id/1052/200/200.jpg?hmac=C8TAQ7jOmsdTxY6LFqx0ft2jNVIX0GxUmo8kCnVHkIE",
+                "https://fastly.picsum.photos/id/915/200/200.jpg?hmac=zZ-_EQ1TWG_LFblhB2BrD2CJYUhLEnobSCCthppN0ZE"
+            ]
         },
 
 
@@ -131,7 +161,14 @@
             "rating": 3,
             "text": "Скользские ужасно.",
             "created": "12 минут назад",
-            "avatar_url": "https://robohash.org/c2f52a9e4839a3cc543b3979799665b3?set=set4&bgset=&size=200x200"
+            "avatar_url": "https://robohash.org/c2f52a9e4839a3cc543b3979799665b3?set=set4&bgset=&size=200x200",
+            "photo_urls": [
+                "https://fastly.picsum.photos/id/772/200/200.jpg?hmac=9euSj4JHTPr7uT5QWVmeNJ8JaqAXY8XmJnYfr_DfBJc",
+                "https://fastly.picsum.photos/id/539/200/200.jpg?hmac=8uIu6eeXIH6tNIHiVORkXIi3GaBh5DO0XR2AXfO7mzA",
+                "https://fastly.picsum.photos/id/1052/200/200.jpg?hmac=C8TAQ7jOmsdTxY6LFqx0ft2jNVIX0GxUmo8kCnVHkIE",
+                "https://fastly.picsum.photos/id/915/200/200.jpg?hmac=zZ-_EQ1TWG_LFblhB2BrD2CJYUhLEnobSCCthppN0ZE",
+                "https://fastly.picsum.photos/id/84/200/200.jpg?hmac=6H-uafgNQmg74KSd7tSKVP1PWLigkAnXdB_PyFgxXNA"
+            ]
         },
         {
             "first_name": "Евгения",
@@ -147,7 +184,10 @@
             "rating": 2,
             "text": "Понравилось отношение - несмотря на то, что заказ был выполнен не идеально, продавец был очень любезен и шёл... Прошла по снегу 30 метров, 5 раз упала. Спасибо мужу, поддерживал. Возврат, к сожалению.",
             "created": "минуту назад",
-            "avatar_url": "https://robohash.org/c2f52a9e4839a3cc543b3979799665b3?set=set4&bgset=&size=200x200"
+            "avatar_url": "https://robohash.org/c2f52a9e4839a3cc543b3979799665b3?set=set4&bgset=&size=200x200",
+            "photo_urls": [
+                "https://fastly.picsum.photos/id/539/200/200.jpg?hmac=8uIu6eeXIH6tNIHiVORkXIi3GaBh5DO0XR2AXfO7mzA"
+            ]
         },
         {
             "first_name": "Никита",
@@ -171,7 +211,12 @@
             "rating": 2,
             "text": "",
             "created": "вчера в 12:39",
-            "avatar_url": "https://robohash.org/fe4c6f18430f4700a9c5a828b1ab5cfd?set=set4&bgset=&size=200x200"
+            "avatar_url": "https://robohash.org/fe4c6f18430f4700a9c5a828b1ab5cfd?set=set4&bgset=&size=200x200",
+            "photo_urls": [
+                "https://fastly.picsum.photos/id/539/200/200.jpg?hmac=8uIu6eeXIH6tNIHiVORkXIi3GaBh5DO0XR2AXfO7mzA",
+                "https://fastly.picsum.photos/id/1052/200/200.jpg?hmac=C8TAQ7jOmsdTxY6LFqx0ft2jNVIX0GxUmo8kCnVHkIE",
+                "https://fastly.picsum.photos/id/915/200/200.jpg?hmac=zZ-_EQ1TWG_LFblhB2BrD2CJYUhLEnobSCCthppN0ZE"
+            ]
         },
     ]
 }
